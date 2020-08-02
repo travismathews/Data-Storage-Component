@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Travis Mathews | Fylo data storage component</title>
+  <link rel="stylesheet" href="css/styles.css">
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+
+  <section class="dashboard">
+    <div class="menu-wrapper">
+      <img class="logo" src="images/logo.svg" alt="Logo">
+      <div class="menu">
+        <div class="badge"><img src="images/icon-document.svg" alt="document" srcset=""></div>
+        <div class="badge"><img src="images/icon-folder.svg" alt="folder" srcset=""></div>
+        <div class="badge"><img src="images/icon-upload.svg" alt="upload" srcset=""></div>
+      </div>
+    </div>
+
+    <div class="storage-wrapper">
+      <div class="storage-large-display">
+        <p><span class="big">185</span> GB Left</p>
+      </div>
+      <div class="storage-slider">
+        <p>You’ve used <b>815 GB</b> of your storage</p>
+        
+        <div class="slider">
+          <input id="slide" type="range" min="10" max="1000" step="100" value="815" />
+          <span class="slider-start-label">0 GB</span>
+          <span class="slider-end-label">1000 GB</span>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+</body>
+</html>
